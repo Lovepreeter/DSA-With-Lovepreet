@@ -170,6 +170,7 @@ void deletion_of_given_element()
     {
         printf("Sorrry , This number is not present in list.\n");
     }
+   if(change==0){
     temp=head;
     for(int i=1;i<position;i++)
     { 
@@ -177,7 +178,7 @@ void deletion_of_given_element()
       temp=temp->link;
     }
     temp2->link=temp->link;
-    free(temp);
+    free(temp);}
     show();
 }
 void deletion_in_last()
